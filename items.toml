@@ -1,0 +1,27 @@
+[Bagel Sandwich]
+image = "res://food_images/Bagel Sandwich.png"
+type = "food"
+
+[Chocolate]
+image = "res://food_images/Chocolate.png"
+type = "food"
+
+[Meat]
+image = "res://food_images/Meat.png"
+type = "food"
+
+[Cookies]
+image = "res://food_images/Cookies.png"
+type = "food"
+
+[Tomato Soup]
+image = "res://food_images/Tomato soup.png"
+type = "food"
+
+[Vegetables]
+image = "res://food_images/Vegetables.png"
+type = "food"
+
+[Pizza]
+image = "res://food_images/Pizza.png"
+type = "food"

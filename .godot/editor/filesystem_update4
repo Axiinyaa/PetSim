@@ -1,2 +1,10 @@
-res://prefabs/draggable_object.tscn
-res://prefabs/draggable_object.gd
+res://prefabs/physics_object/BASE.tscn
+res://prefabs/physics_object/BaseItem.tscn
+res://prefabs/physics_object/Item.gd
+res://HueShift.gdshader
+res://prefabs/pets/base_pet.tscn
+res://prefabs/sea_angels/base_sea_angel.tscn
+res://prefabs/sea_angels/sea_angel_logic.gd
+res://foods.toml
+res://scenes/test_scene.tscn
+res://items.toml

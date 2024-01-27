@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxhal3us8q2lh"]
+
+[ext_resource type="Script" path="res://prefabs/sea_angels/sea_angel_logic.gd" id="1_kxyub"]
+[ext_resource type="Shader" path="res://HueShift.gdshader" id="2_ydvlk"]
+[ext_resource type="Texture2D" uid="uid://dvvscp4duwrrj" path="res://icon.svg" id="3_qmwnd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oponc"]
+shader = ExtResource("2_ydvlk")
+shader_parameter/Hue = 0.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_edmq7"]
+size = Vector2(179, 155)
+
+[node name="SeaAngel" type="Node2D"]
+script = ExtResource("1_kxyub")
+
+[node name="Icon" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_oponc")
+position = Vector2(-1, -3)
+texture = ExtResource("3_qmwnd")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.5, -2.5)
+shape = SubResource("RectangleShape2D_edmq7")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

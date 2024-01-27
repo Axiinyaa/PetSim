@@ -1,4 +1,5 @@
 extends Node2D
+class_name DraggableObject
 
 var dragging: bool
 var hovering: bool
